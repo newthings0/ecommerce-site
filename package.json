@@ -3,15 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development && next dev",
-    "build": "cross-env NODE_ENV=production && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": " cross-env NODE_ENV=test jest",
-    "cypress:open": "cross-env NODE_ENV=test cypress open",
-    "start:test": "cross-env NODE_ENV=test && next build && next start",
-    "eslint": "eslint",
-    "cypress:start": "start-server-and-test 'npm run start:test' 3000 'npm run cypress:open'  "
+    "eslint": "eslint"
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^3.4.2",
